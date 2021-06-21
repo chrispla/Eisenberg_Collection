@@ -3,7 +3,7 @@ Collection of commercial music recordings distributed in the Kenyan coast betwee
 
 ## Metadata
 
-Metadata are provided as a pandas DataFrame saved in HDF5 file format. The file can be loaded using the `pandas.read_hdf` method, where specific columns can be selectively read.
+Metadata are provided as a pandas DataFrame, which is provided in HDF5 file format as a PyTables Table structure. The `metadata.h5` file can be loaded using the `pandas.read_hdf` method, and specific columns can be selectively read.
 
 Not all metadata are available for all recordings, and this is the purpose of specific datasets, as explained later in this document. Empty entries contain the keyword **NA**. All possible metatags are listed below.
 * Song Title
