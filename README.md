@@ -3,26 +3,19 @@ Collection of commercial music recordings distributed in the Kenyan coast betwee
 
 ## Metadata
 
-Metadata are provided as a Python dictionary saved in .json file format. The collection's hierarchy is flat, and metadata for a specific recording are accessed using the NYUAD Archive reference key. Not all metadata are available for all recordings, and this is the purpose of specific datasets, as explained later in this document. Empty entries contain the keyword **None**. All possible metadata categories are listed below.
-* title
-* artist
-* recording_date
-* etc...
+Metadata are provided as a pandas DataFrame saved in HDF5 file format. The file can be loaded using the `pandas.read_hdf` method, where specific columns can be selectively read.
 
-An example can be seen below.
-```python
-{
-  "AD-MC-035_ref2": { # NYUAD Archive reference key
-    "title": "Basamir Azzein—Part 1",
-    "artist": "A. M. Bin Berek",
-    "recording_date": "ca. 1955-1965",
-    "genre": None
-    ..
-   }
-   ..
-}
-
-````
+Not all metadata are available for all recordings, and this is the purpose of specific datasets, as explained later in this document. Empty entries contain the keyword **NA**. All possible metatags are listed below.
+* Song Title
+* Artist
+* Composer
+* Year (estimate/range)
+* Original Form
+* Label
+* Serial Number
+* Genre
+* Collection ID
+* NUAD Archives Reference
 
 ## Datasets
 
